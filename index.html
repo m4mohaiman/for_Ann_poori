@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Ann_Poori</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+<div class="bgoverlay">
+  <div class="container">
+    <span class="ico">
+      <span class="ico2"></span>
+      <span class="title">Click Me</span>
+    </span>
+    <div class="endtext">
+      <span class="close" title="Restart"><i class="fa fa-times"></i></span>  
+      <h1>You're my Ann Poori</h1>
+      <h2>Any Problem?</h2>
+      <h3>~Moh</h3>
+    </div>
+  </div>
+</div>
+
+<script src="jQuery1.11.2.js"></script>
+
+<script> 
+$(document).ready(function(){
+  $('.title').click(function(){
+    $('.container').addClass('open');
+  });
+  
+  
+  $('.close').click(function(){
+    $('.container').removeClass('open');
+  });
+});
+
+</script>
+</body>
+</html>
